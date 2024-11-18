@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="programs-theme.css">
+    <script src="programs-theme.js" defer></script>
+
+    <style>
+        .section-padding {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .navbar {
+            background-color: #003366;
+            min-height: 60px;
+        }
+        .navbar-brand img {
+            height: 50px;
+            margin-left: 10px;
+        }
+        .navbar-nav {
+            margin-right: 10px;
+        }
+        .nav-link {
+            color: white;
+            margin-right: 20px;
+            font-size: 18px;
+            line-height: 60px;
+        }
+        .nav-link:hover {
+            color: #cccccc;
+        }
+
+        .filter-container {
+            width: 300px;
+            margin: auto;
+            background-color: #ccc4c4;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/aitu-logo_white.png" alt="Astana IT University">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <button id="theme-toggle" class="btn btn-secondary theme-button">
+                    🌙 Dark Mode
+                </button>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<div class="container section-padding">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 800px; height: 500px; margin: auto;">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"><p></p></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/AITU1.png" class="d-block w-100" alt="AITU_IMAGE">
+            </div>
+            <div class="carousel-item">
+                <img src="images/AITU2.jpg" class="d-block w-100" alt="AITU_IMAGE">
+            </div>
+            <div class="carousel-item">
+                <img src="images/AITU3.png" class="d-block w-100" alt="AITU_IMAGE">
+            </div>ЧЕРНЫЙ
+            <div class="carousel-item">
+                <img src="images/AITU4.jpg" class="d-block w-100" alt="AITU_IMAGE">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+</div>
+
+<div class="filter-container">
+    <label><input type="checkbox" id="inf-mat" onclick="applyFilters()"> Inf/Math</label>
+    <label><input type="checkbox" id="phys-mat" onclick="applyFilters()"> Phys/Math</label>
+    <label><input type="checkbox" id="geo-mat" onclick="applyFilters()"> Geo/Math</label>
+    <label><input type="checkbox" id="creative" onclick="applyFilters()"> Creative</label>
+</div>
+
+<div class="container section-padding">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card inf-mat">
+                <img src="images/SE_image.jfif" class="card-img-top" alt="SE_image">
+                <div class="card-body">
+                    <h5 class="card-title">Software Engineering</h5>
+                    <p class="card-text">The educational program “Software Engineering” includes disciplines on the basics of IT technologies and software tools that allow students to position themselves as professionals in the field of IT technologies, including the development and maintenance of software of various scales.</p>
+                    <a href="SE_page.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card inf-mat">
+                <img src="images/MT_image.jpeg" class="card-img-top" alt="MT_image">
+                <div class="card-body">
+                    <h5 class="card-title">Media Technologies</h5>
+                    <p class="card-text">The educational program includes disciplines on the basics of media technologies, which allow students to position themselves as professionals in the field of media technologies, including the field of digital journalism, processing and working with images, and video and different media files. </p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card inf-mat">
+                <img src="images/IT_img.webp" class="card-img-top" alt="IT_image">
+                <div class="card-body">
+                    <h5 class="card-title">Computer Science</h5>
+                    <p class="card-text">The educational program “Computer Science” (Computer Science) includes disciplines on the basics of IT technologies and software tools that allow students to position themselves as professionals in the field of IT technologies, including the development and maintenance of software of various scales.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card inf-mat">
+                <img src="images/BDA_image.jpg" class="card-img-top" alt="BDA_image"   >
+                <div class="card-body">
+                    <h5 class="card-title">Big Data Analysis</h5>
+                    <p class="card-text">The “Big    Data    Analysis” Educational Program includes disciplines on the basics of IT technology and software that enable students to position themselves as data analysts, including the development and maintenance of data analysis systems of various scale. As a result   of the study, students will be fluent in data analysis skills as well as several programming languages.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card inf-mat">
+                <img src="images/MCS_image.webp" class="card-img-top" alt="MCS_image">
+                <div class="card-body">
+                    <h5 class="card-title">Mathematical and Computational Science</h5>
+                    <p class="card-text">The educational program offers a comprehensive curriculum that prepares students for three future directions: engineering, bioengineering, and engineering of social processes. In the field of engineering, students gain expertise in mathematical modeling, computational algorithm development.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card inf-mat">
+            <img src="images/BDHA.webp" class="card-img-top" alt="BDHA_image">
+            <div class="card-body">
+                <h5 class="card-title">Big Data in Healthcare</h5>
+                <p class="card-text">The “Big Data in Healthcare” educational program provides students with the opportunity to develop skills in processing and managing big data in the healthcare field. The program incorporates courses that combine electronics, basic medical training, and multidisciplinary sciences. he educational program is interdisciplinary, bringing together the areas of healthcare.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card inf-mat">
+            <img src="images/CS_image.png" class="card-img-top" alt="CS_image">
+            <div class="card-body">
+                <h5 class="card-title">Cybersecurity</h5>
+                <p class="card-text">The educational program regulates the objectives, results, content, conditions and technologies for the implementation of the educational process, assessment of the quality of graduates training in this area of training and includes materials that ensure the quality of training of students and implementation of appropriate educational technology.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card phys-mat">
+            <img src="images/ST_image.jpg" class="card-img-top" alt="ST_image">
+            <div class="card-body">
+                <h5 class="card-title">Smart Technologies</h5>
+                <p class="card-text">The “Smart Technologies” program regulates the goals, results, content, conditions and technologies for the implementation of the educational process, as well as the assessment of the quality of training of participants in this area. It covers a wide range of topics related to smart technologies such as Artificial Intelligence.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card phys-mat">
+            <img src="images/IIOT_image.webp" class="card-img-top" alt="IIOT_image">
+            <div class="card-body">
+                <h5 class="card-title">Industrial Internet of Things</h5>
+                <p class="card-text">EP is aimed at practice-oriented training of specialists capable of designing, deploying and maintaining Internet of Things systems in the manufacturing industry. Upon completion of the training, graduates of the EP will master key competencies in the areas of development of integrated systems for the Internet of things.<p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card phys-mat">
+            <img src="images/EE_image.webp" class="card-img-top" alt="EE_image">
+            <div class="card-body">
+                <h5 class="card-title">Electronic Engineering</h5>
+                <p class="card-text">Educational program “Electronic Engineering” offers students a comprehensive education in the field of electronics. During the development of the program, students will learn the basics of digital and analog electronics, microprocessors, circuitry, signal processing methods and other key concepts. They will gain practical skills in the design.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card geo-mat">
+            <img src="images/ITM_image.png" class="card-img-top" alt="ITM_image">
+            <div class="card-body">
+                <h5 class="card-title">IT Management</h5>
+                <p class="card-text">An information technology manager is a specialist who determines innovative solutions for the implementation of a business strategy and forms business requirements for the development of new products, advises and instructs projects, accompanies the launch of a product and controls its quality, analyzes the market, promotes the product and manages consumer expectations,</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card geo-mat">
+                <img src="images/ITE_image.png" class="card-img-top" alt="ITE_image">
+                <div class="card-body">
+                    <h5 class="card-title">IT Entrepreneurship</h5>
+                    <p class="card-text">This course is designed to study the issues of leadership and personnel management those specialists in the public and private sectors regularly face. This course will focus on the topics of motivation, decision-making, communication, conflict management, group dynamics and organizational change, with more attention paid to how these issues are related. Such discussions of theory.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card geo-mat">
+                <img src="images/AIB_image.webp" class="card-img-top" alt="AIB_image">
+                <div class="card-body">
+                    <h5 class="card-title">AI in Business</h5>
+                    <p class="card-text">«AI Business» program is a comprehensive interdisciplinary curriculum that combines the principles of AI with essential business management skills. Designed to meet the demands of the evolving industry landscape, this program prepares students for leadership roles in the AI-driven economy. Students will delve into core concepts such as machine learning,</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card creative">
+                <img src="images/DJ_image.jfif" class="card-img-top" alt="DJ_image">
+                <div class="card-body">
+                    <h5 class="card-title">Digital Journalism</h5>
+                    <p class="card-text">The educational program Digital Journalism is a kaleidoscope of theoretical knowledge and practical skills for creating and promoting digital content. During the training, students learn modern genres and trends of journalism, convergent and multimedia technologies, are able to transform the product of traditional media into an online environment.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<footer class="bg-dark text-white section-padding text-center">
+    <p>© Astana IT University. All rights reserved. <br>
+        Created by: Bayazin Almas <br>
+        +7-717-264-57-10 <br>
+        info@astanait.edu.kz</p>
+</footer>
+
+<script src="filter.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+    <link rel="stylesheet" href="consult-page_style.css">
+    <script src="consult-page_theme.js" defer></script>
+</head>
+<body class="form-page">
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <div class="popup-title">
+            <h4>Your request has been accepted successfully!</h4>
+        </div>
+        <div class="popup-text">
+            <div class="popup-info">
+                <div class="popup-info-text">
+                    Fullname:
+                </div>
+                <div class="popup-info-value" id="fullnameInfo">
+                    value
+                </div>
+            </div>
+            <div class="popup-info">
+                <div class="popup-info-text">
+                    Phone:
+                </div>
+                <div class="popup-info-value" id="phoneInfo">
+                    value
+                </div>
+            </div>
+            <div class="popup-info">
+            <div class="popup-info-text">
+                Email:
+            </div>
+            <div class="popup-info-value" id="emailInfo">
+                value
+            </div>
+        </div>
+            <div class="popup-info">
+                <div class="popup-info-text">
+                    Date of request:
+                </div>
+                <div class="popup-info-value" id="dateInfo">
+                    value
+                </div>
+            </div>
+        </div>
+        <button class="popup-button form-submit" onclick="closePopup()">
+            Close
+        </button>
+    </div>
+</div>
+
+<header class="form-header">
+    <a href="index.html" class="consult-logo"><img src="images/aitu-logo_white.png" alt="Astana IT University Logo" class="logo"></a>
+    <h1 id="form-question">What is your question?</h1>
+    <button id="theme-toggle" class="btn btn-secondary theme-button">🌙 Dark Mode</button>
+
+</header>
+<main class="form-main" id="form-main">
+    <section class="faq-section">
+        <div class="faq-block">
+            <div class="faq-button">
+                <p>FAQ</p>
+            </div>
+            <div class="faq-answer">
+                <p>You will get consultation depending on your method. Ask question widely and write everything you like to know</p>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <h3 class="form-subtitle">Give us additional information to get a response</h3>
+        <form id="form-info">
+            <div class="form-group">
+                <label for="full-name" class="form-label">Enter your Full Name: </label>
+                <input id="full-name" class="form-input" />
+                <div class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="phone-number" class="form-label">Enter your Phone number: +7</label>
+                <input id="phone-number" class="form-input" />
+                <div class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Enter your Email: </label>
+                <input id="email" class="form-input"/>
+                <div class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="response-method" class="form-label">How would you like to get your answer: </label>
+                <select id="response-method" class="form-select">
+                    <option></option>
+                    <option>Phone call</option>
+                    <option>Letter on your mail</option>
+                    <option>Meeting in University</option>
+                </select>
+                <div class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="question" class="form-label">What is your question: </label>
+                <textarea id="question" class="form-textarea"></textarea>
+                <div class="error"></div>
+            </div>
+            <input type="submit" value="Send" id="form-submit" class="form-submit"/>
+        </form>
+    </section>
+</main>
+
+<script defer src="buttonValidation.js"></script>
+<script defer src="buttonColor.js"></script>
+<script defer src="buttonSound.js"></script>
+<script defer src="buttonAnimation.js"></script>
+</body>
+</html>

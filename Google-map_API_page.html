@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Location</title>
+  <link rel="stylesheet" href="index_style.css">
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZK8KytxyG4iOaKVxdYYaugoleBWWU4QA" defer></script>
+  <script>
+    function initMap() {
+      const location = { lat: 51.090621, lng: 71.415525 };
+
+
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: location,
+        zoom: 16,
+      });
+
+
+      const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: "AITU",
+      });
+    }
+  </script>
+</head>
+<body onload="initMap()">
+<header class="site-header">
+  <a href="index.html"><img src="images/aitu-logo_white.png" alt="Astana IT University Logo" class="logo"></a>
+  <nav class="navigation">
+    <a href="auth.html" class="nav-link" id="auth-button">Log in</a>
+    <input type="submit" value="Log Out" class="nav-link" id="log-out-button">
+    <a href="programs-page.html" class="nav-link">Programs</a>
+    <button id="theme-toggle" class="theme-button">🌙 Dark Mode</button>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="map">
+
+
+    <h1></h1>
+    <div id="map" style="width: 100%; height: 700px;"></div>
+
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>© Astana IT University. All rights reserved. <br>
+    Created by: Bayazin Almas <br>
+    +7-717-264-57-10 <br>
+    info@astanait.edu.kz</p>
+</footer>
+</body>
+</html>
